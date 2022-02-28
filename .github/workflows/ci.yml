@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ github.repository }}:latest,${{ github.repository }}:v${{ github.run_number }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/stop-russia:latest,${{ secrets.DOCKERHUB_USERNAME }}/stop-russia:v${{ github.run_number }}
