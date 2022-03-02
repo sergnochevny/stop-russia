@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 #get parameter of num droples
 if [ $1 ]; then  NUMDROPLES=$1; else NUMDROPLES=1; fi
 
