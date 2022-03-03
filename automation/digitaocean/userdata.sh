@@ -5,8 +5,8 @@ apt -y install docker.io
 
 fallocate -l 1G /swapfile && chmod 600 /swapfile && mkswap /swapfile && swapon /swapfile 
 
-NUMPROC=50
+NUMPROC=5
 
 for proc in $(seq 1 $NUMPROC); do
-  screen -d -m docker run -ti --rm nsaurk/stop-russia
+  docker run ghcr.io/arriven/db1000n:latest
 done
